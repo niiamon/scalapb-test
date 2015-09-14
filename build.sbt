@@ -20,8 +20,8 @@ libraryDependencies ++= {
     "com.typesafe.akka" %% "akka-http-experimental"               % akkaStreamV,
     "com.typesafe.akka" %% "akka-http-spray-json-experimental"    % akkaStreamV,
     "com.typesafe.akka" %% "akka-http-testkit-experimental"       % akkaStreamV,
-    "org.scalatest"     %% "scalatest"                            % scalaTestV % "testerpackage"
-    // "com.trueaccord.scalapb" %% "sbt-scalapb"                     % akkaStreamV
+    "org.scalatest"     %% "scalatest"                            % scalaTestV % "test",
+    "com.trueaccord.scalapb" %% "scalapb-runtime"                 % "0.5.9" % PB.protobufConfig
   )
 }
 
